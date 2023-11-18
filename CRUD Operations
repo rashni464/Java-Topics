@@ -1,0 +1,15 @@
+CRUD - 
+Successful Response
+Create : POST - 201,  
+Update : PUT/PATCH : 200, 
+Read: GET : 200, 
+Delete : delete - 200
+
+Error response code : 
+ post - data wrong : 400 
+ authentication - 401
+ authrization - 413
+ server error - 500
+ 
+ 
+ 
