@@ -1,0 +1,19 @@
+Step 1: create a new package  below to main-java-com by right click and give name as controller.
+step 2: write the required code in it.
+@RestController:  @RESTController is a spring boot annotation that informs our application that our HelloWorldController class will be exposing REST endpoints. This will help us create RESTful web services.
+
+Similarly, the @GetMapping annotation is used to handle HTTP GET requests. GET requests are used to retrieve sources. The “/hello-world” is the URI needed to gain access to the source.
+
+
+code starts from here--------
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloWorldController {
+    @GetMapping("/hello-world")
+    public String HelloWorld(){
+        return "hello world";
+    }
+}
