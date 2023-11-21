@@ -1,5 +1,9 @@
 
 Step 1: Go to https://start.spring.io/
 Step  2: Project: maven, Language: Java, Spring boot- 3.1.5, name: required name, Dependencies: add sprng web
-Step 3: generate and it will download the file unzip it and open that in the intelliji.
-Step 4: 
+Step 3: generate and it will download the file unzip it in the folder and open that in the intelliji.
+Step 4: In Intellij click on new and select the folder.
+Step 5:Run the application on righ clicking on Demo1120HelloWorld10Application which is the main file under main-com.
+
+
+
