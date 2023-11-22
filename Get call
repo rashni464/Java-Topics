@@ -1,1 +1,82 @@
+How to make a Get call:
 
+Result should be displayed in the form 
+{
+    "id": 1,
+    "email": "abc@email.com",
+    "first_name": "rashni",
+    "last_name": "masooram"
+}
+
+
+Step 1: create a new package as employee and create a java class as employee .
+--------------Note here we are expecting the output to be string and int so to get that we need to create a new object type---
+Step 2: create another class employeeDetails to decrate the properties of the new object
+
+----EmployeeDetails claas---
+package com.codacum.Demo1120.HelloWorld10.products;
+
+public class EmployeeDetails {
+    private int id;
+    private String email;
+    private String first_name;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getFirst_name() {
+        return first_name;
+    }
+
+    public void setFirst_name(String first_name) {
+        this.first_name = first_name;
+    }
+
+    public String getLast_name() {
+        return last_name;
+    }
+
+    public void setLast_name(String last_name) {
+        this.last_name = last_name;
+    }
+
+    private String last_name;
+}
+---------------------------------------
+
+Employee class--------------------------------------------------
+
+
+ 
+ package com.codacum.Demo1120.HelloWorld10.products;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class Employee {
+    @GetMapping("/get-employee")
+public EmployeeDetails getEmployee(){
+EmployeeDetails pinky= new EmployeeDetails();
+        pinky.setId(1);
+        pinky.setFirst_name("rashni");
+        pinky.setLast_name("masooram");
+        pinky.setEmail("abc@email.com");
+
+
+   return pinky;
+}
+}
